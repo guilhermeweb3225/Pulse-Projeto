@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse</title>
+    <link rel="stylesheet" href="style-inicio.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Contato</a>
+            <a href="#">projetos</a>
+        </nav>
+        <div>
+            <picture>
+                <source media="(max-width:500px )" srcset="logo-pulse.png">
+                <source media="(max-width:1300px )" srcset="logo-pulse.png">
+                <source media="(max-width:100% )" srcset="logo-pulse.png">
+                <img src="logo-pulse.png" alt="">
+            </picture>
+        </div>
+    </header>
+    <main>
+        <div >
+            <p>transforme suas<br> ideias em código</p>
+        </div>
+        <div class="dvsl">
+            <img src="arrow.png" alt="arrow"class="arrow-animation1">
+        </div>
+
+        <div class="dvsr">
+            <img src="arrow.png" alt="arrow"class="arrow-animation2"class="img2">
+        </div>
+        <div class="dvsl">
+            <img src="arrow.png" alt="arrow"class="arrow-animation1">
+        </div>
+
+        <div class="dvsr">
+            <img src="arrow.png" alt="arrow"class="arrow-animation2">
+        </div>
+    </main>
+    <footer>
+            <p id="p1">(65) 9280 - 7604<img src="whatsapp-logo.png" alt="logo-whatsapp"></p>
+            <h2>Criador :<strong>GuilhermeP.Oliveira</strong></h2>
+    </footer>
+    <script>
+        //dv1-left
+        var imgs=document.querySelectorAll('img.arrow-animation1')
+        var imgs2=document.querySelectorAll('img.arrow-animation2')
+        function abrir(){
+        imgs[0].addEventListener('click',()=>{
+            var divs=document.querySelectorAll('div.dvsl')
+            divs[0].classList.remove('fechar')
+            divs[0].classList.add('delft')
+            divs[0].style.width='80%'
+            imgs[0].style.transform='rotate(180deg)'
+            fechar()
+                })
+            }
+            abrir()
+            function fechar(){
+imgs[0].addEventListener('click',()=>{
+    var divs=document.querySelectorAll('div.dvsl')
+    divs[0].classList.add('fechar')
+    divs[0].style.width='250px'
+    imgs[0].style.transform='rotate(0deg)'
+    imgs[0].style.transform='translate(-100%)'
+    abrir()
+        })
+        }
+        //dv2-left
+        function abrir2(){
+        imgs[1].addEventListener('click',()=>{
+            var divs=document.querySelectorAll('div.dvsl')
+            divs[1].classList.remove('fechar')
+            divs[1].classList.add('delft')
+            divs[1].style.width='80%'
+            imgs[1].style.transform='rotate(180deg)'
+            fechar2()
+                })
+            }
+            abrir2()
+            function fechar2(){
+imgs[1].addEventListener('click',()=>{
+    var divs=document.querySelectorAll('div.dvsl')
+    divs[1].classList.add('fechar')
+    divs[1].style.width='250px'
+    imgs[1].style.transform='rotate(0deg)'
+    imgs[1].style.transform='translate(-100%)'
+    abrir2()
+        })
+        }
+        //dv3-right
+        function abrir3(){
+        imgs2[0].addEventListener('click',()=>{
+            var divs2=document.querySelectorAll('div.dvsr')
+            divs2[0].classList.remove('fechar2')
+            divs2[0].classList.add('delft2')
+            divs2[0].style.width='80%'
+            divs2[0].style.left='130%'
+            imgs2[0].style.transform='rotate(0deg)'
+            imgs2[0].style.transform='translate(-100%)'
+            fechar3()
+                })
+            }
+            abrir3()
+            function fechar3(){
+imgs2[0].addEventListener('click',()=>{
+    var divs2=document.querySelectorAll('div.dvsr')
+    divs2[0].classList.add('fechar2')
+    divs2[0].style.width='250px'
+    divs2[0].style.left='100%'
+    imgs2[0].style.transform='rotate(180deg)'
+    abrir3()
+        })
+        }
+        //dv4-right
+        function abrir4(){
+        imgs2[1].addEventListener('click',()=>{
+            var divs2=document.querySelectorAll('div.dvsr')
+            divs2[1].classList.remove('fechar2')
+            divs2[1].classList.add('delft2')
+            divs2[1].style.width='80%'
+            divs2[1].style.left='130%'
+            imgs2[1].style.transform='rotate(0deg)'
+            imgs2[1].style.transform='translate(-100%)'
+            fechar4()
+                })
+            }
+            abrir4()
+            function fechar4(){
+imgs2[1].addEventListener('click',()=>{
+    var divs2=document.querySelectorAll('div.dvsr')
+    divs2[1].classList.add('fechar2')
+    divs2[1].style.width='250px'
+    divs2[1].style.left='100%'
+    imgs2[1].style.transform='rotate(180deg)'
+    abrir4()
+        })
+        }
+
+    </script>
+</body>
+</html>
