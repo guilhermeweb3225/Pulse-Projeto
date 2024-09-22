@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulse</title>
     <link rel="stylesheet" href="style-inicio.css">
+    <link rel="shortcut icon" href="P.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -27,17 +28,34 @@
             <p>transforme suas<br> ideias em código</p>
         </div>
         <div class="dvsl">
+            <div class="dv-img-d">
+                <img src="ursula-f.png" alt="ursula.logo">
+            </div>
+            <p class="p-infor">Ursula é uma plataforma que reúne diversos links de ferramentas de Inteligência Artificial, facilitando o acesso dos usuários a uma variedade de IAs. O site oferece um ponto centralizado para explorar e utilizar essas ferramentas, e a logo foi criada utilizando IA, reforçando a essência tecnológica da plataforma.<a href="https://guilhermeweb3225.github.io/ursula/ursulapg.html"target="_blanck"class="linksdeacesso">URSULA</a></p>
             <img src="arrow.png" alt="arrow"class="arrow-animation1">
         </div>
 
         <div class="dvsr">
-            <img src="arrow.png" alt="arrow"class="arrow-animation2"class="img2">
+            <div class="dv-img-e">
+                <img src="x.avif" alt="">
+            </div>
+            <p class="p-inforR">xxxxxx</p>
+            <img src="arrow.png" alt="arrow"class="arrow-animation2">
         </div>
+
         <div class="dvsl">
+            <div class="dv-img-d">
+                <img src="x.avif" alt="">
+            </div>
+            <p class="p-infor"></p>
             <img src="arrow.png" alt="arrow"class="arrow-animation1">
         </div>
 
         <div class="dvsr">
+            <div class="dv-img-e">
+                <img src="x.avif" alt="">
+            </div>
+            <p class="p-inforR"></p>
             <img src="arrow.png" alt="arrow"class="arrow-animation2">
         </div>
     </main>
@@ -45,102 +63,6 @@
             <p id="p1">(65) 9280 - 7604<img src="whatsapp-logo.png" alt="logo-whatsapp"></p>
             <h2>Criador :<strong>GuilhermeP.Oliveira</strong></h2>
     </footer>
-    <script>
-        //dv1-left
-        var imgs=document.querySelectorAll('img.arrow-animation1')
-        var imgs2=document.querySelectorAll('img.arrow-animation2')
-        function abrir(){
-        imgs[0].addEventListener('click',()=>{
-            var divs=document.querySelectorAll('div.dvsl')
-            divs[0].classList.remove('fechar')
-            divs[0].classList.add('delft')
-            divs[0].style.width='80%'
-            imgs[0].style.transform='rotate(180deg)'
-            fechar()
-                })
-            }
-            abrir()
-            function fechar(){
-imgs[0].addEventListener('click',()=>{
-    var divs=document.querySelectorAll('div.dvsl')
-    divs[0].classList.add('fechar')
-    divs[0].style.width='250px'
-    imgs[0].style.transform='rotate(0deg)'
-    imgs[0].style.transform='translate(-100%)'
-    abrir()
-        })
-        }
-        //dv2-left
-        function abrir2(){
-        imgs[1].addEventListener('click',()=>{
-            var divs=document.querySelectorAll('div.dvsl')
-            divs[1].classList.remove('fechar')
-            divs[1].classList.add('delft')
-            divs[1].style.width='80%'
-            imgs[1].style.transform='rotate(180deg)'
-            fechar2()
-                })
-            }
-            abrir2()
-            function fechar2(){
-imgs[1].addEventListener('click',()=>{
-    var divs=document.querySelectorAll('div.dvsl')
-    divs[1].classList.add('fechar')
-    divs[1].style.width='250px'
-    imgs[1].style.transform='rotate(0deg)'
-    imgs[1].style.transform='translate(-100%)'
-    abrir2()
-        })
-        }
-        //dv3-right
-        function abrir3(){
-        imgs2[0].addEventListener('click',()=>{
-            var divs2=document.querySelectorAll('div.dvsr')
-            divs2[0].classList.remove('fechar2')
-            divs2[0].classList.add('delft2')
-            divs2[0].style.width='80%'
-            divs2[0].style.left='130%'
-            imgs2[0].style.transform='rotate(0deg)'
-            imgs2[0].style.transform='translate(-100%)'
-            fechar3()
-                })
-            }
-            abrir3()
-            function fechar3(){
-imgs2[0].addEventListener('click',()=>{
-    var divs2=document.querySelectorAll('div.dvsr')
-    divs2[0].classList.add('fechar2')
-    divs2[0].style.width='250px'
-    divs2[0].style.left='100%'
-    imgs2[0].style.transform='rotate(180deg)'
-    abrir3()
-        })
-        }
-        //dv4-right
-        function abrir4(){
-        imgs2[1].addEventListener('click',()=>{
-            var divs2=document.querySelectorAll('div.dvsr')
-            divs2[1].classList.remove('fechar2')
-            divs2[1].classList.add('delft2')
-            divs2[1].style.width='80%'
-            divs2[1].style.left='130%'
-            imgs2[1].style.transform='rotate(0deg)'
-            imgs2[1].style.transform='translate(-100%)'
-            fechar4()
-                })
-            }
-            abrir4()
-            function fechar4(){
-imgs2[1].addEventListener('click',()=>{
-    var divs2=document.querySelectorAll('div.dvsr')
-    divs2[1].classList.add('fechar2')
-    divs2[1].style.width='250px'
-    divs2[1].style.left='100%'
-    imgs2[1].style.transform='rotate(180deg)'
-    abrir4()
-        })
-        }
-
-    </script>
+    <script src="pag-inicio.js"></script>
 </body>
 </html>
