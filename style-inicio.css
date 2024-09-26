@@ -99,6 +99,7 @@ main>div>div.dv-img-d{
 }
 div.dv-img-d>img{
     width: 16vw;
+    heigh:16vw;
     border-radius:10px;
 }
 div.dv-img-e>img{
