@@ -84,7 +84,7 @@ main>div:nth-child(2){/*box 1*/
     width: 16vw;
     height: 16vw;
     position:relative;
-    top: 100vh;
+    top: 700px;
     left: 10%;
     box-shadow:0 0 10px;
     border-radius:10px;
@@ -102,7 +102,7 @@ div.dv-img-d>img{
     border-radius:10px;
 }
 div.dv-img-e>img{
-    width: 100%;
+    width: 16vw;
     border-radius:10px;
     position: relative;
     left: 100%;
@@ -133,7 +133,7 @@ main>div:nth-child(3){
     width: 16vw;
     height: 16vw;
     position:relative;
-    top: 140vh;
+    top: 110vh;
     left: 100%;
     transform: translate(-150%);
     box-shadow:0 0 10px;
@@ -143,7 +143,7 @@ main>div:nth-child(4){/*box 1*/
     width: 16vw;
     height: 16vw;
     position:relative;
-    top: 180vh;
+    top: 120vh;
     left: 10%;
     box-shadow:0 0 10px;
     border-radius:10px;
@@ -152,7 +152,7 @@ main>div:nth-child(5){/*box1*/
     width: 16vw;
     height: 16vw;
     position:relative;
-    top: 220vh;
+    top: 130vh;
     left: 100%;
     transform: translate(-150%);
     box-shadow:0 0 10px;
@@ -162,12 +162,14 @@ main>div>img.arrow-animation1{
     position: relative;
     left: 100%;
     top: -50%;
+    cursor: pointer;
     transform: translate(-100%, -50%);
 }
 main>div>img.arrow-animation2{
     position: relative;
     left: 3vw;
     top: -21%;
+    cursor: pointer;
     transform: translate(-100%, -50%) rotate(180deg);
 }
 
@@ -181,6 +183,7 @@ main>div>img.arrow-animation2{
 }
 .delft2{
     width: 80vw;
+    height: 16vw;
     animation: corr-r 1s;
     position: relative;left: 130%;
 }
@@ -199,7 +202,7 @@ a.linksdeacesso:hover{
 footer{
     background-color: #525252;
     position: relative;
-    top: 250vh;
+    top: 150vh;
     width: 100%;
     height: 150px;
     border: 0px solid white;
@@ -248,19 +251,19 @@ footer>h2>strong{
 
     0%{ position: absolute; left: 0%; top: 20vh; width: 500px; transform:translate(-100%) ;filter: drop-shadow(0 0 2px rgb(0, 0, 0)); }
 
-    10%{ position: absolute; left:80vh; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); }
+    10%{ position: absolute; left:100vw; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); }
 
-    20%{ position: absolute; left:80vh; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    20%{ position: absolute; left:100vw; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0));
      }
-    30%{ position: absolute; left:80vh; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0)); }
+    30%{ position: absolute; left:100vw; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0)); }
 
-    40%{ position: absolute; left:80vh; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0)); }
+    40%{ position: absolute; left:100vw; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0)); }
 
-    50%{ position: absolute; left:80vh; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0)); }
+    50%{ position: absolute; left:100vw; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0)); }
 
-    60%{ position: absolute; left:80vh; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0));}
+    60%{ position: absolute; left:100vw; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0));}
 
-    70%{position: absolute; left:80vh; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0));}
+    70%{position: absolute; left:100vw; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0));}
 
     80%{position: absolute;left:100%;top:0;width: 160px; filter: drop-shadow(0 0 10px rgb(0, 0, 0));}
 
