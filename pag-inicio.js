@@ -1,87 +1,33 @@
-var img1=document.querySelectorAll('img.arrow-animation1')
-var img2=document.querySelectorAll('img.arrow-animation2')
-var dv1=document.querySelectorAll('div.dvsl')
-var dv2=document.querySelectorAll('div.dvsr')
-var p_inforE=document.querySelectorAll('p.p-infor')
-var p_inforR=document.querySelectorAll('p.p-inforR')
-//funçoes e eventos a baixo
-//divs do lado esquerdo da tela
-function abrir1(){
-    img1[0].addEventListener('click',()=>{
-        dv1[0].classList.remove('fechardv')
-        dv1[0].classList.add('delft')
-        dv1[0].style.width='80vw'
-        img1[0].style.transform='translate(-100%,-50%) rotate(180deg)'
-        p_inforE[0].style.fontSize='2vw'
-        fechar1()
+var dvimage=document.querySelectorAll('div.dv-img-e')
+var dvfundo=document.querySelectorAll('div.dvsl')
+//efeitos de saida
+function saida1(){
+    dvfundo[0].addEventListener('mouseout',()=>{
+        dvimage[0].classList.add('saida-m')
     })
-    img1[1].addEventListener('click',()=>{
-        dv1[1].classList.remove('fechardv')
-        dv1[1].classList.add('delft')
-        dv1[1].style.width='80vw'
-        img1[1].style.transform='translate(-100%,-50%) rotate(180deg)'
-        p_inforE[1].style.fontSize='2vw'
-
-        fechar1()
+    dvfundo[1].addEventListener('mouseout',()=>{
+        dvimage[1].classList.add('saida-m')
+    })
+    dvfundo[2].addEventListener('mouseout',()=>{
+        dvimage[2].classList.add('saida-m')
+    })
+    dvfundo[3].addEventListener('mouseout',()=>{
+        dvimage[3].classList.add('saida-m')
     })
 }
-abrir1()
-function fechar1(){
-    img1[0].addEventListener('click',()=>{
-       dv1[0].classList.add('fechardv')
-       dv1[0].style.width='16vw'
-       img1[0].style.transform='translate(-100%,-50%) rotate(0deg)'
-       p_inforE[0].style.fontSize='0vw'
-
-       abrir1()
+saida1()
+function saida2(){
+    dvfundo[0].addEventListener('mouseout',()=>{
+        dvimage[0].classList.add('saida-m2')
     })
-    img1[1].addEventListener('click',()=>{
-        dv1[1].classList.add('fechardv')
-       dv1[1].style.width='16vw'
-       img1[1].style.transform='translate(-100%,-50%) rotate(0deg)'
-       p_inforE[1].style.fontSize='0vw'
-       abrir1()
+    dvfundo[1].addEventListener('mouseout',()=>{
+        dvimage[1].classList.add('saida-m2')
+    })
+    dvfundo[2].addEventListener('mouseout',()=>{
+        dvimage[2].classList.add('saida-m2')
+    })
+    dvfundo[3].addEventListener('mouseout',()=>{
+        dvimage[3].classList.add('saida-m2')
     })
 }
-//dvs do lado direito da tela
-function abrir2(){
-    img2[0].addEventListener('click',()=>{
-        dv2[0].classList.remove('fechar12')
-        dv2[0].classList.add('delft2')
-        dv2[0].style.width='80vw'
-        dv2[0].style.left='130%'
-        img2[0].style.transform='translate(-100%,-50%) rotate(0deg)'
-        p_inforR[0].style.fontSize='2vw'
-        fechar2()
-    })
-    img2[1].addEventListener('click',()=>{
-        dv2[1].classList.remove('fechar12')
-        dv2[1].classList.add('delft2')
-        dv2[1].style.width='80vw'
-        dv2[1].style.left='130%'
-        img2[1].style.transform='translate(-100%,-50%) rotate(0deg)'
-        p_inforR[1].style.fontSize='2vw'
-
-        fechar2()
-    })
-}
-abrir2()
-function fechar2(){
-    img2[0].addEventListener('click',()=>{
-       dv2[0].classList.add('fechar12')
-       dv2[0].style.width='16vw'
-       dv2[0].style.left='100%'
-       img2[0].style.transform='translate(-100%,-50%) rotate(180deg)'
-       p_inforR[0].style.fontSize='0vw'
-
-       abrir2()
-    })
-    img2[1].addEventListener('click',()=>{
-        dv2[1].classList.add('fechar12')
-       dv2[1].style.width='16vw'
-       dv2[1].style.left='100%'
-       img2[1].style.transform='translate(-100%,-50%) rotate(180deg)'
-       p_inforR[1].style.fontSize='0vw'
-       abrir2()
-    })
-}
+saida2()
