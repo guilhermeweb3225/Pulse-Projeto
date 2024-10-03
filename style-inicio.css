@@ -1,37 +1,46 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 @font-face {
-    font-family: 'transformes';
+    font-family: "transformes";
     src: url(Transformers\ Movie.ttf) format(truetype);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-:root{
-    --cor1:#ff00dd;
+
+:root {
+    --cor1: #ff00dd;
 }
-html,body{
+
+html,
+body {
     background-color: #000000;
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
     width: 10px;
-    background:black ;
+    background: black;
 }
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb {
     background-color: #525252;
     border-radius: 10px;
     box-shadow: 0 0 20px rgb(255, 255, 255);
 }
-header>div{
+/*inicio da cabela do site*/
+header>div {
     width: 100px;
     position: absolute;
     left: 100%;
     top: -2vh;
     transform: translate(-100%);
-    animation: pls1 3.1s ;
+    animation: pls1 3.1s;
 }
-div>picture>img{
+
+div>picture>img {
     position: relative;
     left: 100%;
     transform: translate(-100%);
@@ -39,7 +48,8 @@ div>picture>img{
     filter: drop-shadow(0 0 2px rgb(0, 0, 0));
     animation: pls2 5s;
 }
-header{
+
+header {
     position: fixed;
     z-index: 1;
     background-color: #000000;
@@ -48,50 +58,59 @@ header{
     height: 10vh;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.466);
 }
-header>nav{
+
+header>nav {
     border: none;
     position: relative;
     top: 40%;
     left: 4%;
 }
-header>nav>a{
+
+header>nav>a {
     text-decoration: none;
     font-size: 20px;
-    margin:0 10px;
+    margin: 0 10px;
     color: rgb(248, 248, 248);
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
-a:hover{
+
+a:hover {
     color: rgba(238, 238, 238, 0.616);
     border-bottom: 1px solid gray;
 }
-main{
-    position:relative;
+/*fim da cabeça do site*/
+
+/*começo do corpo do site*/
+main {
+    position: relative;
     width: 80%;
     height: 99vh;
     margin: auto;
     background-color: #000000;
 }
-main>div:nth-child(1){/*h2,trasnformesuasideias*/
+
+main>div:nth-child(1) {
+    /*h2,trasnformesuasideias*/
     border: none;
     width: 80%;
-    position:relative;
+    position: relative;
     left: 10%;
     top: 30vh;
     font-size: 50px;
-    font-family:  "transformes",serif;
+    font-family: "transformes", serif;
     color: rgb(0, 0, 0);
     filter: drop-shadow(0 0 10px rgb(250, 250, 250));
     animation: transform1 1.5s 2s;
 }
-main>div.dvsl{
+
+main>div.dvsl {
     position: relative;
     top: 50vh;
     left: 50%;
-    transform: translate(-205%,-50%);
+    transform: translate(-205%, -50%);
     width: 150px;
     height: 150px;
     display: inline-flex;
@@ -99,72 +118,89 @@ main>div.dvsl{
     border: none;
     border-radius: 10px;
 }
-main>div.dvsl:hover{
-    div.dv-img-e{
-    position: relative;
-    top: -10vh;
-    box-shadow: 0px 10px 20px rgb(168, 168, 168);
-    animation: eflevi 300ms;
-}
-    p.p-infor{
+
+main>div.dvsl:hover {
+    div.dv-img-e {
+        position: relative;
+        top: -10vh;
+        box-shadow: 0px 10px 20px rgb(168, 168, 168);
+        animation: eflevi 300ms;
+    }
+
+    p.p-infor {
         color: black;
         font-size: 15px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        a{
+
+        a {
             color: #ff00dd;
         }
     }
 }
-.saida-m{
+
+.saida-m {
     position: relative;
     top: 0;
     animation: saidam 300ms;
 }
-p.p-infor{
+
+p.p-infor {
     z-index: 1;
     color: transparent;
     position: fixed;
     top: 60%;
     left: 15%;
-    a{
+
+    a {
         color: transparent;
     }
 }
-main>div>div.dv-img-e{
-    background-image: linear-gradient(to right,rgb(212, 0, 255),rgb(255, 0, 98));
+
+main>div>div.dv-img-e {
+    background-image: linear-gradient(to right, rgb(212, 0, 255), rgb(255, 0, 98));
     border: none;
     border-radius: 10px;
-    width:150px;
-    img{
     width: 150px;
-    height: 150px;
-    border:none;
-    border-radius: 10px;
-   }
+
+    img {
+        width: 150px;
+        height: 150px;
+        border: none;
+        border-radius: 10px;
+    }
 }
-div#dv01{
-    background-image: linear-gradient(to right,rgb(212, 0, 255),rgb(255, 0, 98));
+
+div#dv01 {
+    background-image: linear-gradient(to right, rgb(212, 0, 255), rgb(255, 0, 98));
 }
-div#dv02{
-    background-image: linear-gradient(to right,rgb(255, 255, 255),rgb(255, 255, 255));
+
+div#dv02 {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
 }
-div#dv03{
-    background-image: linear-gradient(to right,rgb(255, 255, 255),rgb(255, 255, 255));
+
+div#dv03 {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
 }
-div#dv04{
-    background-image: linear-gradient(to right,rgb(255, 255, 255),rgb(255, 255, 255));
+
+div#dv04 {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
 }
-a.linksdeacesso{
+
+a.linksdeacesso {
     font-size: 30px;
     font-family: "transformes";
     color: #ff00dd;
     text-decoration: none;
 }
-a.linksdeacesso:hover{
+
+a.linksdeacesso:hover {
     color: #d96aef;
     border-bottom: 3px solid #7D0196;
 }
-footer{
+/*fim do corpo do site*/
+
+/*começo do pé do site*/
+footer {
     background-color: #525252;
     position: relative;
     top: 0vh;
@@ -173,7 +209,8 @@ footer{
     border: 0px solid white;
     box-shadow: -3px -4px 10px rgb(100, 100, 100);
 }
-footer>p#p1{
+
+footer>p#p1 {
     position: relative;
     top: 0px;
     left: 11%;
@@ -183,12 +220,14 @@ footer>p#p1{
     width: 50%;
     font-family: 'transformes' sans-serif;
     color: rgb(206, 193, 193);
-    img{
+
+    img {
         width: 40px;
         animation: whats1 2s infinite;
+    }
 }
-}
-footer>h2{
+
+footer>h2 {
     color: black;
     font-family: 'transformes';
     width: 90vw;
@@ -197,7 +236,8 @@ footer>h2{
     left: 1%;
     filter: drop-shadow(0 0 2px);
 }
-footer>h2>strong{
+
+footer>h2>strong {
     margin-left: 10px;
     font-size: 20px;
     font-family: 'transformes' sans-serif;
@@ -205,145 +245,263 @@ footer>h2>strong{
     text-decoration: underline;
     filter: drop-shadow(0 0 2px rgb(29, 28, 28));
 }
-@keyframes pls{
-    0%{ width: 100%;height: 100vh; background-color: rgb(255, 255, 255);}
-    25%{ width: 100%;height: 100vh; background-color: rgb(255, 255, 255);}
-    50%{ width: 100%;height: 100vh; background-color: rgb(255, 255, 255);}
-    75%{ width: 100%;height: 100vh; background-color: rgb(255, 255, 255);}
-    100%{ width: 0%; height: 100vh; background-color: rgb(255, 255, 255);}
+/*fim do pé do site*/
+
+/*todas as animaçoes*/
+@keyframes pls {/*animaçao de entrada'pulse'*/
+    0% {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+    }
+
+    25% {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+    }
+
+    50% {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+    }
+
+    75% {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+    }
+
+    100% {
+        width: 0%;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+    }
 }
-@keyframes pls{
 
-    0%{ position: absolute; left: 0%; top: 20vh; width: 500px; transform:translate(-100%) ;filter: drop-shadow(0 0 2px rgb(0, 0, 0)); }
+@keyframes pls {/*animaçao de entrada'pulse'*/
 
-    10%{ position: absolute; left:100vw; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); }
+    0% {
+        position: absolute;
+        left: 0%;
+        top: 20vh;
+        width: 500px;
+        transform: translate(-100%);
+        filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+    }
 
-    20%{ position: absolute; left:100vw; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0));
-     }
-    30%{ position: absolute; left:100vw; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0)); }
+    10% {
+        position: absolute;
+        left: 100vw;
+        top: 20vh;
+        width: 500px;
+        filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    }
 
-    40%{ position: absolute; left:100vw; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0)); }
+    20% {
+        position: absolute;
+        left: 100vw;
+        top: 20vh;
+        width: 500px;
+        filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+        -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    }
 
-    50%{ position: absolute; left:100vw; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0)); }
+    30% {
+        position: absolute;
+        left: 100vw;
+        top: 20vh;
+        width: 500px;
+        filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+        -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    }
 
-    60%{ position: absolute; left:100vw; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0));}
+    40% {
+        position: absolute;
+        left: 100vw;
+        top: 20vh;
+        width: 500px;
+        filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+        -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    }
 
-    70%{position: absolute; left:100vw; top:20vh; width: 500px; filter: drop-shadow(0 0 10px rgb(0, 0, 0)); -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0));}
+    50% {
+        position: absolute;
+        left: 100vw;
+        top: 20vh;
+        width: 500px;
+        filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+        -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    }
 
-    80%{position: absolute;left:100%;top:0;width: 160px; filter: drop-shadow(0 0 10px rgb(0, 0, 0));}
+    60% {
+        position: absolute;
+        left: 100vw;
+        top: 20vh;
+        width: 500px;
+        filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+        -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    }
 
-    90%{width: 100px;position: absolute;left:100%;top:0;width: 160px; filter: drop-shadow(0 0 10px rgb(0, 0, 0));}
+    70% {
+        position: absolute;
+        left: 100vw;
+        top: 20vh;
+        width: 500px;
+        filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+        -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    }
 
-    100%{position: absolute;left:100%;top:0;width: 160px;}
+    80% {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        width: 160px;
+        filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    }
+
+    90% {
+        width: 100px;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        width: 160px;
+        filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    }
+
+    100% {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        width: 160px;
+    }
 }
-@keyframes eflevi{
-    0%{
+
+@keyframes eflevi {/*deslocamento horizontal para cima das divs*/
+    0% {
         top: 0;
     }
-    100%{
+
+    100% {
         top: -10vh;
     }
 }
-@keyframes saidam{
-    0%{
+
+@keyframes saidam {/*deslocamento horizontal para baixo das divs*/
+    0% {
         top: -10vh;
     }
-    100%{
+
+    100% {
         top: 0;
     }
 }
-@keyframes whats1{
-    0%{ filter: drop-shadow(0 0 10px rgb(0, 255, 0));}
-    50%{ filter: drop-shadow(0 0 10px rgb(1, 24, 1));}
-    100%{ filter: drop-shadow(0 0 10px rgb(0, 255, 0));}
+
+@keyframes whats1 {/*animaçao da logo do WhatsApp*/
+    0% {
+        filter: drop-shadow(0 0 10px rgb(0, 255, 0));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 10px rgb(1, 24, 1));
+    }
+
+    100% {
+        filter: drop-shadow(0 0 10px rgb(0, 255, 0));
+    }
 }
-@media screen and (max-width:800px){
-    main>div.dvsl{
+
+@media screen and (max-width:800px) {/*quando a tela for menor que 800px*/
+    main>div.dvsl {/*divs do corpo*/
         background-color: white;
-       display: grid;
-       position: relative;
-       top: 50%;
-       left: 10%;
-       transform: translate(-10%,-50%);
-       margin-top: 15px;
-}
-main>div.dvsl:hover{
-    background-color:gray;
-    animation: eflevi3 300ms;
-    div.dv-img-e{
+        display: grid;
         position: relative;
-        left: 10vh;
-        top: -2px;
-        width: 155px;
-        height: 155px;
-        box-shadow: 0px 10px 20px rgb(168, 168, 168);
-        animation: eflevi2 300ms;
-}
-}
-a.linksdeacesso{
-    font-size: 20px;
-    position: relative;
-    top: -90px;
-    left: 0;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+        top: 50%;
+        left: 10%;
+        transform: translate(-10%, -50%);
+        margin-top: 15px;
+    }
 
+    main>div.dvsl:hover {
+        background-color: gray;
+        animation: eflevi3 300ms;
+
+        div.dv-img-e {
+            position: relative;
+            left: 10vh;
+            top: -2px;
+            width: 155px;
+            height: 155px;
+            box-shadow: 0px 10px 20px rgb(168, 168, 168);
+            animation: eflevi2 300ms;
+        }
+    }
+
+    a.linksdeacesso {
+        font-size: 20px;
+        position: relative;
+        top: -90px;
+        left: 0;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+
+    }
+
+    a.linksdeacesso:hover {
+        color: white !important;
+        border-bottom: none;
+    }
+
+    .saida-m2 {
+        position: relative;
+        top: 0;
+        animation: saidam2 300ms;
+    }
+
+    footer {
+        position: relative;
+        top: 70vh;
+    }
 }
-a.linksdeacesso:hover{
-    color: white!important;
-    border-bottom: none;
-}
-.saida-m2{
-    position: relative;
-    top: 0;
-    animation: saidam2 300ms;
-}
-footer{
-    position: relative;
-    top: 70vh;
-}
-}
-@keyframes eflevi2{
-    0%{
-        top:0vh;
+
+@keyframes eflevi2 {/*animaçao das divs frontal'aumenta de tamanho'*/
+    0% {
+        top: 0vh;
         left: 0;
         width: 150px;
         height: 150px;
     }
-    100%{
+
+    100% {
         top: -2px;
         left: 10vh;
         width: 155px;
         height: 155px;
     }
 }
-@keyframes eflevi3{
-    0%{
+
+@keyframes eflevi3 {/*divs de base muda de cor */
+    0% {
         background-color: white;
     }
-    100%{
+
+    100% {
         background-color: gray;
     }
 }
-@keyframes saidam3{
-    0%{
-        background-color: gray;
-    }
-    100%{
-        background-color: white;
-    }
-}
-@keyframes saidam2{
-    0%{
+@keyframes saidam2 {/*animaçao das divs voltando ao seu estado normal*/
+    0% {
         background-color: white;
         top: -2px;
         left: 10vh;
         width: 155px;
         height: 155px;
     }
-    100%{
+
+    100% {
         background-color: black;
-        top:0vh;
+        top: 0vh;
         left: 0;
         width: 150px;
         height: 150px;
