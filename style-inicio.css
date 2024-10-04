@@ -248,7 +248,7 @@ footer>h2>strong {
 /*fim do pé do site*/
 
 /*todas as animaçoes*/
-@keyframes pls {/*animaçao de entrada'pulse'*/
+@keyframes pls1 {/*animaçao de entrada'pulse'*/
     0% {
         width: 100%;
         height: 100vh;
@@ -280,7 +280,7 @@ footer>h2>strong {
     }
 }
 
-@keyframes pls {/*animaçao de entrada'pulse'*/
+@keyframes pls2 {/*animaçao de entrada'pulse'*/
 
     0% {
         position: absolute;
